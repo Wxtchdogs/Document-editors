@@ -25,7 +25,7 @@ If a file with that name does not exit then you will be asked if you would like 
 
 Enter a number option to choose your method of configuration.
 
-
-
 ## Important
+This program has been tested in Python IDLE and VSCode.
+
 Lines 20-24 and 30-36 were not written by Matthew Ng. All credits go to third parties.
