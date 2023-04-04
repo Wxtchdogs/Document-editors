@@ -7,7 +7,7 @@
 </h1>
 
 <p align="center">
-    Written by Matthew Ng ©
+    Matthew Ng 2023©
 </p>
 
 ## What is this?
@@ -21,7 +21,7 @@ If a file with that name does not exit then you will be asked if you would like 
 
 3. You will now be presented with a list of options to configure the file's contents. The list will look as follows:
 
-<img src="https://imgur.com/3kGTGpW">
+<img src="https://i.imgur.com/3kGTGpW.png">
 
 Enter a number option to choose your method of configuration.
 
