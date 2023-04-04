@@ -64,22 +64,23 @@ def validation(num):
         except ValueError:
             num = input("Please enter a valid number")
 
+#THIS PART FIXED?? 15/03/2023
 #Add new words function
 def addwords():
     readwords()
     minlength = input("Please enter a minimum word length")
-    validation(minlength)
+    minlength = validation(minlength)
     maxlength = input("Please enter a maximum word length")
-    validation(maxlength)
+    maxlength = validation(maxlength)
     
     while True:
         newword = input("Enter any words you would like to add. Enter nothing to exit")
         if newword == "":
             print("Word adding module exited")
             break
-        elif len(newword) > maxlength:
+        elif len(newword) > int(maxlength):
             print("This word exceeds the designated max word length of", maxlength)
-        elif len(newword) < minlength:
+        elif len(newword) < int(minlength):
             print("This word is shorter than the designated minimum word length of", minlength)
         else:
             words.append(newword)
@@ -112,8 +113,8 @@ def openfile():
         readwords()
         time.sleep(3) 
     else:
-        name = input("That file does not exist. Would you like to create a new one with the same name?")
-        if name.lower() == 'yes':
+        name = input("That file does not exist. Would you like to create a new one with the same name? Y/N")
+        if name.lower() == 'y':
             filePath = os.path.normcase("./word-lists/{0}".format(filename+'.txt'))
             filew = open(filePath, 'w')
             print('File with the name','"'+filename+'"','has been created')
@@ -130,7 +131,7 @@ def choicetree():
     choice = input("Please chose an option")
     options = ['0','1','2','3']
     while choice not in options:
-        choice = input("Please chose an option")
+        choice = input("Please choose an option")
     if choice == '0':
         clearScreen()
         return 'quit'
@@ -173,14 +174,3 @@ while True:
 writing()
 print("Writing to file has finished")
 print("Program exited")
-
-
-
-
-
-
-
-
-
-
-
