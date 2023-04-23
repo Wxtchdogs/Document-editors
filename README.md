@@ -15,7 +15,7 @@ This is a very simple text file editor that allows you to create files, add word
 
 ## How it works
 This program has been tested in Python IDLE and VSCode.
-1. Create a folder with the name "word-lists" in the same directory that you have the text editor script stored in. Alternatively you can use a different folder name however you will need to specify this in the script. On line 7 and 16 replace "word-lists" with your file name.
+1. Create a folder with the name "word-lists" in the same directory that you have the text editor script stored in. Alternatively you can use a different folder name however you will need to specify this in the script. On line 7 and 16 replace "word-lists" with your folder name.
 
 2. Run the script. You will be asked to enter the name of your text file. Enter the name of the text file to open within that directory. 
 If a file with that name does not exit then you will be asked if you would like to create a new txt file with that name. If so type "y".
